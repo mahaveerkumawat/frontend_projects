@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sub_main {
+            width: 1000px;
+            margin: auto;
+        }
+
+        .main {
+            height: 500px;
+            width: 800px;
+            background-color: transparent;
+            border: solid 4px green;
+            margin: 100px auto;
+            transition: 4s;
+        }
+
+        .darkbg {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sub_main">
+        <div class="main">
+        </div>
+        <button onclick="addred()">Add</button>
+        <button onclick="removered()">Remove</button>
+        <button onclick="togglered()">Toggle</button>
+    </div>
+</body>
+<script>
+    const a = document.querySelector('.main');
+    function addred(){
+        a.classList.add('darkbg');
+    }
+    function removered(){
+        a.classList.remove('darkbg');
+    }
+    function togglered(){
+        a.classList.toggle('darkbg');
+    }
+</script>
+
+</html>
